@@ -1,23 +1,34 @@
+// import React from "react";
 import Navbars from "./components/Navbars";
-import Advert from "./components/Advert";
+import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
+import Facilities from "./components/Facilities";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="grid-container">
-      <header className="row">
-        <Navbars />
-        <img src="../img/pexels-jimmy-chan-1458457.jpg" alt="" />
-      </header>
+    <Router>
+      <div className="grid-container">
+        <header className="row">
+          <Navbars />
+        </header>
 
-      <main>
-        <Advert />
-      </main>
+        <main>
+          <Switch>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
+            <Route path="/facility">
+              <Facilities />
+            </Route>
+          </Switch>
+        </main>
 
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+        <div>
+          <Footer />
+        </div>
+      </div>
+    </Router>
   );
 }
 

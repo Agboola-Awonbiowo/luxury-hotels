@@ -34,8 +34,13 @@ ul {
 
 ul li {
   margin: 20px;
-  color: #fff;
   font-size: 20px;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .name {
@@ -333,6 +338,32 @@ button {
 
 .sub-form {
   display: flex;
+}
+
+.facility-heading h1 {
+  font-family: Adobe Garamond Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #14274a;
+}
+
+.facility-content {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #14274a;
+}
+
+.m-b {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 /* 

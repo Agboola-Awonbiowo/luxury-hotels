@@ -1,13 +1,16 @@
 import React from "react";
 
-export default function Advert() {
+export default function Homepage() {
   return (
     <div>
+      <div className="showcase">
+        <img src="../img/pexels-jimmy-chan-1458457.jpg" alt="" />
+      </div>
       <div className="home-heading">
         <span>All our room types are including complementary breakfast</span>
       </div>
 
-      <div>
+      <div className="main">
         <div className="container">
           <div className="lux-re">
             <div className="linc">
