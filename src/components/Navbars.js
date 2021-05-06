@@ -17,7 +17,9 @@ export default function Navbars() {
             <li>
               <Link to="/facility">Facilities</Link>
             </li>
-            <li>Rooms</li>
+            <li>
+              <Link to="/rooms">Rooms</Link>
+            </li>
             <li>Contact-us</li>
           </ul>
         </div>

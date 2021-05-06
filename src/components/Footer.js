@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="triangle">
         <span className="triangle-up"></span>
       </div>
-      <div className="footer">
-        <div className="container">
+      <div className="foot">
+        <div className="container-one">
           <div className="inner-foot">
             <div className="address-area">
               <div className="b-name">
@@ -56,7 +56,7 @@ export default function Footer() {
               <div>Subscribe to our newsletter</div>
               <div className="sub-form">
                 <input type="email" placeholder="Email Address" />
-                <div className="btn">
+                <div className="btn-one">
                   <span>Ok</span>
                 </div>
               </div>

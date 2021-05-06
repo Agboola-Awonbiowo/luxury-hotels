@@ -41,6 +41,7 @@ ul li {
 li a {
   text-decoration: none;
   color: #fff;
+  margin-left: 60px;
 }
 
 .name {
@@ -149,8 +150,8 @@ li a {
   margin-bottom: 50px;
 }
 
-.container {
-  width: 85%;
+.container-one {
+  width: 85% !important;
   margin: auto;
   overflow: hidden;
 }
@@ -165,7 +166,7 @@ li a {
   height: 579px;
 }
 
-.content {
+.conten {
   width: 542px;
   height: 350px;
   margin-top: 50px;
@@ -174,41 +175,48 @@ li a {
 
 .content-two {
   width: 542px;
-  height: 350px;
+  /* height: 500px; */
   /* margin-top: 5px; */
   margin-right: 50px;
 }
 
 .linc {
   display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 500px;
 }
 
-.line {
-  height: 320px;
+.con-lin {
+  display: flex;
+}
+
+.linen {
+  height: 300px;
   border-right: 2px solid #14274a;
-  margin-top: 85px;
+  margin-top: 30px;
   margin-right: 30px;
 }
 
-.line-two {
+.linen-two {
   height: 390px;
   border-right: 2px solid #14274a;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-right: 30px;
 }
 
-.content h1 {
+.h-one {
   font-family: Adobe Garamond Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
-  line-height: 30px;
+  line-height: 0px;
   /* identical to box height */
   letter-spacing: 0.02em;
   color: #14274a;
 }
 
-.content-two h1 {
+.head-two {
   font-family: Adobe Garamond Pro;
   font-style: normal;
   font-weight: bold;
@@ -219,12 +227,13 @@ li a {
   color: #14274a;
 }
 
-.content-text {
+.conten-text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 40px;
+  padding-top: 30px;
   /* or 160% */
   color: #14274a;
 }
@@ -238,16 +247,6 @@ button {
   border: none;
   border-radius: 10px;
   font-size: 20px;
-}
-
-.testimonials {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.tseti {
-  width: 200px;
 }
 
 .triangle-up {
@@ -264,17 +263,17 @@ button {
   margin-top: 50px;
 }
 
-.footer {
-  width: 100%;
+.foot {
+  width: 100% !important;
   height: 300px;
   background-color: #14274a;
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 
 .inner-foot {
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between !important;
   color: #fff;
 }
 
@@ -301,12 +300,12 @@ button {
 .social-area div,
 .about-area div,
 .sub-area div {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 
 .b-name {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .sub-area input {
@@ -324,16 +323,16 @@ button {
   padding-left: 10px;
 }
 
-.btn {
+.btn-one {
   width: 80px;
   height: 52px;
-  background-color: #e0b973;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #e0b973 2.5px solid;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+  background-color: #e0b973 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: #e0b973 2.5px solid !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
 }
 
 .sub-form {
@@ -349,6 +348,8 @@ button {
   text-align: center;
   letter-spacing: 0.05em;
   color: #14274a;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .facility-content {
@@ -364,6 +365,141 @@ button {
 .m-b {
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.container-two {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.im-h {
+  overflow: hidden;
+  border: 2px #14274a solid;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.rooms-content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #14274a;
+}
+
+.rooms-content p {
+  padding: 10px;
+}
+
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.im-name {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14274a;
+  color: #fff;
+}
+
+.view-more {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  align-items: center;
+  padding: 30px;
+}
+
+.fa-plus-circle {
+  color: #e0b973;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.fa-minus-circle {
+  color: #e0b973;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.open-sidebar {
+  cursor: pointer;
+}
+
+.view-btn {
+  display: flex;
+}
+
+.view-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #14274a;
+}
+
+section {
+  z-index: 1000;
+  display: none;
+  transition: all 0.5s;
+}
+
+section.open {
+  display: inline-block;
+}
+
+.testi-boton {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.testimo-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.teti-head h1 {
+  font-family: Adobe Garamond Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  /* identical to box height */
+  color: #14274a;
+  margin-bottom: 20px;
+}
+
+.testi-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+  color: #14274a;
+  margin-bottom: 10px;
+}
+
+.testi-name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #14274a;
+  margin-bottom: 10px;
 }
 
 /* 
