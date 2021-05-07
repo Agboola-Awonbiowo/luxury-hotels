@@ -9,7 +9,22 @@ export default function Rooms() {
       <div className="showcase">
         <img src="../img/pexels-patryk-kamenczak-775219.jpg" alt="" />
       </div>
-
+      <div>
+        <div className="welcome-note">
+          <div className="ad-ban">
+            <span className="one">WELCOME TO</span>
+            <span className="two">LUXURY</span>
+            <span className="three">HOTELS</span>
+            <span className="four">
+              Book your stay and enjoy luxury <br /> redefined at the most
+              affordable rates.
+            </span>
+            <div className="book">
+              <img src="../img/Book now.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="facility-heading">
         <h1>ROOMS AND RATE</h1>
         <div className="rooms-content">
@@ -58,11 +73,11 @@ export default function Rooms() {
           </div>
           <div>
             <button className="testi-boton">
-              <i class="fas fa-angle-left"></i>
+              <i className="fas fa-angle-left"></i>
             </button>
 
             <button className="testi-boton">
-              <i class="fas fa-angle-right"></i>
+              <i className="fas fa-angle-right"></i>
             </button>
           </div>
         </div>

@@ -40,7 +40,7 @@ export default function DoubleRoom() {
                 onClick={() => setViewMoreIsOpen(false)}
               >
                 <span>
-                  <i class="fas fa-minus-circle"></i>
+                  <i className="fas fa-minus-circle"></i>
                 </span>
                 <span className="view-name">VIEW ROOM DETAILS</span>
               </div>
@@ -57,7 +57,7 @@ export default function DoubleRoom() {
             )}
 
             <div>
-              <button>$149 Avg/night</button>
+              <div className="price-tag">$149 Avg/night</div>
             </div>
           </div>
           <section className={viewMoreIsOpen ? "open" : ""}>

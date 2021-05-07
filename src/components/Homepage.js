@@ -4,7 +4,23 @@ export default function Homepage() {
   return (
     <div>
       <div className="showcase">
-        <img src="../img/pexels-jimmy-chan-1458457.jpg" alt="" />
+        <img src="../img/pexels-nabi-sohrabli-2387931.jpg" alt="" />
+      </div>
+      <div>
+        <div className="welcome-note">
+          <div className="ad-ban">
+            <span className="one">WELCOME TO</span>
+            <span className="two">LUXURY</span>
+            <span className="three">HOTELS</span>
+            <span className="four">
+              Book your stay and enjoy luxury <br /> redefined at the most
+              affordable rates.
+            </span>
+            <div className="book">
+              <img src="../img/Book now.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
       <div className="home-heading">
         <span>All our room types are including complementary breakfast</span>
@@ -23,8 +39,10 @@ export default function Homepage() {
                     made for leisure. Take your mind off the day-to-day of home
                     life and find a private paradise for yourself.
                   </div>
-                  <div>
-                    <button>EXPLORE</button>
+                  <div className="b-position">
+                    <div>
+                      <button>EXPLORE</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -49,8 +67,10 @@ export default function Homepage() {
                     access to endless sandy beach ensures a relaxed state of
                     mind. It seems like time stands still watching the ocean.
                   </div>
-                  <div>
-                    <button>EXPLORE</button>
+                  <div className="b-position">
+                    <div>
+                      <button>EXPLORE</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -75,11 +95,11 @@ export default function Homepage() {
           </div>
           <div>
             <button className="testi-boton">
-              <i class="fas fa-angle-left"></i>
+              <i className="fas fa-angle-left"></i>
             </button>
 
             <button className="testi-boton">
-              <i class="fas fa-angle-right"></i>
+              <i className="fas fa-angle-right"></i>
             </button>
           </div>
         </div>

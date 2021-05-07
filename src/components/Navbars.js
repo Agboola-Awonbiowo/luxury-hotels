@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 export default function Navbars() {
+  const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
+
   return (
     <div>
       <div className="head">
@@ -9,34 +11,38 @@ export default function Navbars() {
           <span>HOTELS</span>
         </div>
 
-        <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/facility">Facilities</Link>
-            </li>
-            <li>
-              <Link to="/rooms">Rooms</Link>
-            </li>
-            <li>Contact-us</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="welcome-note">
-        <span className="one">WELCOME TO</span>
-        <span className="two">LUXURY</span>
-        <span className="three">HOTELS</span>
-        <span className="four">
-          Book your stay and enjoy luxury <br /> redefined at the most
-          affordable rates.
+        <span
+          type="button"
+          onClick={() => setSidebarIsOpen(true)}
+          className="open-hamburger"
+        >
+          <i className="fa fa-bars"></i>
         </span>
-      </div>
-
-      <div className="book">
-        <img src="../img/Book now.png" alt="" />
+        <aside className={sidebarIsOpen ? "open" : ""}>
+          <div className="nav-li">
+            <span
+              className="close-sidebar"
+              onClick={() => setSidebarIsOpen(false)}
+              type="button"
+            >
+              <i className="fa fa-close"></i>
+            </span>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/facility">Facilities</Link>
+              </li>
+              <li>
+                <Link to="/rooms">Rooms</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact-us</Link>
+              </li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </div>
   );

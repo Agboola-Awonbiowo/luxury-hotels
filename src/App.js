@@ -4,6 +4,7 @@ import Homepage from "./components/Homepage";
 import Footer from "./components/Footer";
 import Facilities from "./components/Facilities";
 import Rooms from "./components/Rooms";
+import Contact from "./components/Contact";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -27,12 +28,16 @@ function App() {
             <Route path="/rooms">
               <Rooms />
             </Route>
+
+            <Route path="/contact">
+              <Contact />
+            </Route>
           </Switch>
         </main>
 
-        <div>
+        <footer>
           <Footer />
-        </div>
+        </footer>
       </div>
     </Router>
   );
